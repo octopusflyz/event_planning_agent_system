@@ -11,7 +11,7 @@ import requests
 class ImageGenerationClient:
     def __init__(self):
         self.api_url = "https://llmapi.lcpu.dev/v1/images/generations"
-        self.api_key = "sk-341MSIcpny9H3aA15YHeonvLu1fvtPHjOjE4otJrmNV0st6h"
+        self.api_key = "YOUR_API_KEY"
 
     def generate_image(self, prompt, model="flux-dev", size="1024x1024"):
         """
@@ -97,7 +97,7 @@ class TextProcessingClient:
         :param model: 使用的模型名称，默认使用deepseek-chat
         """
         self.api_url = "https://llmapi.lcpu.dev/v1/chat/completions"
-        self.api_key = "sk-341MSIcpny9H3aA15YHeonvLu1fvtPHjOjE4otJrmNV0st6h"
+        self.api_key = "YOUR_API_KEY"
         self.model = model
 
     def refine_text(self, text, style, style_reference="", prompt1=""):
@@ -148,7 +148,7 @@ class RuleGenerationClient:
         :param model: 使用的模型名称，默认使用deepseek-reasoner
         """
         self.api_url = "https://llmapi.lcpu.dev/v1/chat/completions"
-        self.api_key = "sk-341MSIcpny9H3aA15YHeonvLu1fvtPHjOjE4otJrmNV0st6h"
+        self.api_key = "YOUR_API_KEY"
         self.model = model
 
     def generate_rules(self, event_type, requirements):
